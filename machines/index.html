@@ -111,6 +111,18 @@ body[dir=rtl] .prose li::before{left:auto;right:0}
 .sec-dark .prose p,.sec-dark .prose li{color:var(--inv-2)}
 .sec-dark .prose li{border-bottom-color:rgba(200,169,106,.14)}
 .figure{border:1px solid var(--line);background:var(--paper-2)}
+/* Parts gallery on the concrete pump truck page. Four across on desktop because
+   the parts are small objects on white and read fine at a quarter width; the
+   grid collapses rather than shrinks so the photographs stay legible. */
+.pt-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.pt-grid figure{margin:0}
+.pt-grid img{width:100%;height:auto;display:block;border:1px solid var(--line);background:var(--paper-2)}
+.pt-grid figcaption{margin-top:9px;font-size:.78rem;line-height:1.42;color:var(--txt-2)}
+.pt-group{margin-top:46px}
+.pt-group h3{font-size:1.02rem;color:var(--inv);margin-bottom:18px;letter-spacing:.01em}
+.pt-anchor{margin:30px 0 0}
+@media(max-width:900px){.pt-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:620px){.pt-grid{grid-template-columns:repeat(2,1fr)}}
 /* height:auto is load-bearing, not tidiness. This sheet sets img{max-width:100%}
    and nothing else, so with no height declaration the width/height ATTRIBUTES on
    the tag act as a declared height: the box became width:100% x 768px (or 1024px)
