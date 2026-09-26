@@ -180,6 +180,16 @@ footer ul{list-style:none}
 footer li{padding:5px 0;font-size:.88rem}
 footer a:hover{color:var(--gold-2)}
 .f-bot{margin-top:44px;padding-top:22px;border-top:1px solid var(--gold-line);font-size:.8rem;color:var(--inv-3);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+/* WhatsApp sits in the brand column rather than a fourth footer column: that
+   column was removed on purpose when the language control moved to the strip
+   above the header, and the three-column grid is what the footer is built on. */
+.f-wa{margin-top:16px;display:flex;align-items:center;flex-wrap:wrap;gap:4px 10px;font-size:.9rem}
+.f-wa-l{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.f-wa-n{margin-top:10px;font-size:.8rem;color:var(--inv-3);max-width:36em}
+.wa-alt{margin-top:26px;border:1px solid var(--line);background:var(--card);padding:28px 30px;max-width:620px}
+.wa-alt h3{font-size:1.05rem;color:var(--inv);margin-bottom:10px}
+.wa-alt p{font-size:.9rem;color:var(--txt-2);margin-bottom:20px;max-width:44em}
+.wa-alt .cta{margin-top:0;gap:12px}
 /* The language control sits in a slim strip above the header, on the right. It
    used to be the fourth column of the footer, which meant a visitor had to
    scroll to the bottom of the page to find their own language — nobody does
@@ -229,6 +239,8 @@ body{top:0!important}
   <div>
     <a class="brand" href="/ru/"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0B1A15"/><path d="M16 7l6 9-6 9-6-9z" fill="none" stroke="#C8A96A" stroke-width="1.6"/></svg><span><span class="brand-t">JadeRitual Machinery</span><span class="brand-s">Закупка &amp; консолидация</span></span></a>
     <p style="margin-top:18px;font-size:.88rem;max-width:32em">Подразделение JadeRitual Group. Мы закупаем, консолидируем и экспортируем — мы не производитель.</p>
+    <p class="f-wa"><span class="f-wa-l">WhatsApp</span><a href="https://wa.me/8618663543398">+86 186 6354 3398</a><span aria-hidden="true">&middot;</span><a href="https://wa.me/8615589482015">+86 155 8948 2015</a></p>
+    <p class="f-wa-n">Отправьте номер детали, фото или модель машины. Мы ответим о наличии и цене для вашего объёма — цена рассчитывается по запросу и не публикуется на этом сайте.</p>
   </div>
   <div><h4>Категории</h4><ul><li><a href="/ru/catalog/#undercarriage">Ходовая часть</a></li><li><a href="/ru/catalog/#hydraulics">Гидравлика</a></li><li><a href="/ru/catalog/#concrete-pump-parts">Быстроизнашивающиеся детали бетононасосов</a></li><li><a href="/ru/catalog/#pump-pipes">Бетоновод</a></li><li><a href="/ru/catalog/#slurry-pump-parts">Детали шламовых и грязевых насосов</a></li><li><a href="/ru/catalog/#crusher-wear-parts">Быстроизнашивающиеся детали дробилок и грохотов</a></li><li><a href="/ru/catalog/#attachments">Навесное оборудование для экскаваторов</a></li><li><a href="/ru/catalog/#engine-service">Детали двигателя и сервиса</a></li><li><a href="/ru/catalog/#electrical-cab">Электрика и детали кабины</a></li><li><a href="/ru/catalog/#welding">Сварочное оборудование и расходные материалы</a></li><li><a href="/ru/catalog/#machines">Машины и насосы</a></li></ul></div>
   <div><h4>Поставка</h4><ul><li><a href="/ru/how-we-supply/">Как мы поставляем</a></li><li><a href="/ru/enquiry/">Отправить запрос</a></li><li><a href="/ru/machines/">Машины &amp; насосы</a></li><li><a href="/privacy/">Конфиденциальность</a></li><li><a href="/terms/">Условия</a></li></ul></div>

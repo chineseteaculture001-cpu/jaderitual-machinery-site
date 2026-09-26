@@ -180,6 +180,16 @@ footer ul{list-style:none}
 footer li{padding:5px 0;font-size:.88rem}
 footer a:hover{color:var(--gold-2)}
 .f-bot{margin-top:44px;padding-top:22px;border-top:1px solid var(--gold-line);font-size:.8rem;color:var(--inv-3);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+/* WhatsApp sits in the brand column rather than a fourth footer column: that
+   column was removed on purpose when the language control moved to the strip
+   above the header, and the three-column grid is what the footer is built on. */
+.f-wa{margin-top:16px;display:flex;align-items:center;flex-wrap:wrap;gap:4px 10px;font-size:.9rem}
+.f-wa-l{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.f-wa-n{margin-top:10px;font-size:.8rem;color:var(--inv-3);max-width:36em}
+.wa-alt{margin-top:26px;border:1px solid var(--line);background:var(--card);padding:28px 30px;max-width:620px}
+.wa-alt h3{font-size:1.05rem;color:var(--inv);margin-bottom:10px}
+.wa-alt p{font-size:.9rem;color:var(--txt-2);margin-bottom:20px;max-width:44em}
+.wa-alt .cta{margin-top:0;gap:12px}
 /* The language control sits in a slim strip above the header, on the right. It
    used to be the fourth column of the footer, which meant a visitor had to
    scroll to the bottom of the page to find their own language — nobody does
@@ -246,12 +256,22 @@ body{top:0!important}
   <input type="hidden" name="_subject" value="Machinery enquiry from website">
   <input type="text" name="_honey" style="display:none">
   <button type="submit">Enviar consulta</button>
-</form>
-</div></section><footer><div class="wrap">
+ </form>
+ <div class="wa-alt">
+   <h3>¿Prefiere escribir?</h3>
+   <p>Enviar números de pieza y fotografías suele ser más rápido por WhatsApp. La cotización se prepara igual que a través del formulario.</p>
+   <div class="cta">
+     <a class="btn btn-solid" href="https://wa.me/8618663543398">WhatsApp +86 186 6354 3398</a>
+     <a class="btn btn-ghost" href="https://wa.me/8615589482015">WhatsApp +86 155 8948 2015</a>
+   </div>
+ </div>
+ </div></section><footer><div class="wrap">
 <div class="f-grid">
   <div>
     <a class="brand" href="/es/"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0B1A15"/><path d="M16 7l6 9-6 9-6-9z" fill="none" stroke="#C8A96A" stroke-width="1.6"/></svg><span><span class="brand-t">JadeRitual Machinery</span><span class="brand-s">Compra &amp; consolidación</span></span></a>
     <p style="margin-top:18px;font-size:.88rem;max-width:32em">Una división de JadeRitual Group. Compramos, consolidamos y exportamos — no somos fabricante.</p>
+    <p class="f-wa"><span class="f-wa-l">WhatsApp</span><a href="https://wa.me/8618663543398">+86 186 6354 3398</a><span aria-hidden="true">&middot;</span><a href="https://wa.me/8615589482015">+86 155 8948 2015</a></p>
+    <p class="f-wa-n">Envíe un número de pieza, una foto o el modelo de la máquina. Respondemos con disponibilidad y precio para su cantidad — cotizado por consulta, no publicado en este sitio.</p>
   </div>
   <div><h4>Categorías</h4><ul><li><a href="/es/catalog/#undercarriage">Piezas de tren de rodaje</a></li><li><a href="/es/catalog/#hydraulics">Componentes hidráulicos</a></li><li><a href="/es/catalog/#concrete-pump-parts">Piezas de desgaste para bombas de hormigón</a></li><li><a href="/es/catalog/#pump-pipes">Tubería de conducción de hormigón</a></li><li><a href="/es/catalog/#slurry-pump-parts">Piezas para bombas de pulpa y lodo</a></li><li><a href="/es/catalog/#crusher-wear-parts">Piezas de desgaste para trituración y cribado</a></li><li><a href="/es/catalog/#attachments">Aditamentos para excavadoras</a></li><li><a href="/es/catalog/#engine-service">Piezas de motor y de servicio</a></li><li><a href="/es/catalog/#electrical-cab">Piezas eléctricas y de cabina</a></li><li><a href="/es/catalog/#welding">Equipos y consumibles de soldadura</a></li><li><a href="/es/catalog/#machines">Máquinas y bombas</a></li></ul></div>
   <div><h4>Suministro</h4><ul><li><a href="/es/how-we-supply/">Cómo suministramos</a></li><li><a href="/es/enquiry/">Enviar consulta</a></li><li><a href="/es/machines/">Máquinas &amp; bombas</a></li><li><a href="/privacy/">Privacidad</a></li><li><a href="/terms/">Condiciones</a></li></ul></div>
