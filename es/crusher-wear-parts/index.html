@@ -56,6 +56,23 @@ nav a:hover{color:var(--gold-2)}nav a:hover::after{width:100%}
 @media(max-width:1240px){nav{display:none}}
 .hd-cta{flex:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-950);background:var(--gold);padding:11px 22px;font-weight:600}
 .hd-cta:hover{background:var(--gold-2)}
+/* Narrow screens. The header used to overflow its own viewport: .brand and
+   .hd-cta are both flex:none and the brand text is nowrap, so the row had a hard
+   minimum around 484px. At 360px the enquiry button - the entire purpose of the
+   header - sat about 82% outside the screen and the whole page could be dragged
+   sideways. Fixed by letting the row wrap, not by overflow-x:hidden: hiding the
+   overflow would also kill the sticky header underneath it. */
+@media(max-width:760px){
+/* padding-top/bottom, deliberately not the padding shorthand: .hd is also .wrap,
+   which owns the horizontal page margin, and the shorthand reset it to zero -
+   the logo jumped to the very edge and stopped aligning with the body text. */
+.hd{height:auto;min-height:56px;flex-wrap:wrap;gap:8px 12px;padding-top:9px;padding-bottom:9px}
+.brand{min-width:0;gap:9px}
+.mark{width:26px;height:26px}
+.brand-t{font-size:.98rem}
+.brand-s{display:none}
+.hd-cta{margin-left:auto;padding:8px 13px;font-size:.6rem;letter-spacing:.06em;white-space:nowrap}
+}
 .hero{position:relative;overflow:hidden;padding:112px 0 96px;
 background:radial-gradient(1100px 620px at 90% -14%,rgba(200,169,106,.15) 0%,rgba(200,169,106,0) 62%),
 radial-gradient(900px 700px at 4% 108%,rgba(78,154,130,.18) 0%,rgba(78,154,130,0) 60%),
